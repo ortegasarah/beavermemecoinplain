@@ -93,8 +93,11 @@ a {
   width: 30px;
   margin: 0 5px;
 }
+.myVideo img {
+  display: none;
+}
 
-#myVideo {
+.myVideo {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -105,8 +108,6 @@ a {
   bottom: 0;
   z-index: -1;
 }
-
-
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
@@ -125,6 +126,22 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+  .myVideo source {
+    display: none;
+  }
+
+  .myVideo img {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
   .menu ul li a {
     font-size: 1.2rem;
   }
