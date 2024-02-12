@@ -110,11 +110,14 @@ a {
 }
 
 .key {
-  font-size: 12px;
-  padding: 4em 2em;
+  font-size: 1.2em;
+  padding: 3em 2em;
   text-align: center;
   background-color: #000;
   font-family: "Karla", sans-serif;
+}
+.key p {
+  padding-top: 2em;
 }
 /* Media Queries */
 @media screen and (max-width: 768px) {
@@ -136,7 +139,9 @@ a {
   .myVideo source {
     display: none;
   }
-
+  .key {
+    font-size: 12px;
+  }
   .myVideo img {
     display: block;
     width: 100vw;
