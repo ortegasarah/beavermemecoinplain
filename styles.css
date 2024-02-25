@@ -122,6 +122,26 @@ a {
 .key p {
   padding-top: 2em;
 }
+
+
+footer {
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.logo-container img {
+  max-width: 130px;
+  margin: 0 28px;
+  height: 100px;
+}
+
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .menu ul li a {
@@ -168,22 +188,13 @@ a {
   .header-content {
     font-size: 0.8em;
   }
-}
 
-footer {
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-.logo-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-  align-items: center;
-}
-.logo-container img {
-  max-width: 130px;
-  margin: 0 28px;
-  height: 100px;
-
+  .logo-container img {
+    max-width: 100px;
+    margin: 0 28px;
+    height: 40px;
+  }
+  .logo-container svg {
+    height: 40px;
+  }
 }
