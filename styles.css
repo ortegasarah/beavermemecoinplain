@@ -53,13 +53,13 @@ a {
 
 .buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .button {
-  margin: 3em;
+  /* margin: 3em; */
   background-color: #fff;
   border-radius: 100px;
   box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
@@ -72,7 +72,7 @@ a {
   font-family: "Sigmar One";
   /* font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif; */
   /* font-weight: bold; */
-  padding: 37px 37px;
+  padding: 14px 37px 7px 37px;
   text-align: center;
   text-decoration: none;
   transition: all 250ms;
@@ -81,6 +81,10 @@ a {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+
+.button img {
+  height: 3em;
 }
 
 .button:hover {
@@ -117,7 +121,17 @@ a {
   text-align: center;
   text-shadow: 6px 6px #113658;
 }
-
+.buytext {
+  z-index: 50;
+  font-family: "Sigmar One", sans-serif;
+  font-size: 4em;
+  text-align: center;
+  text-shadow: 6px 6px #113658;
+  margin: 1em 0;
+}
+.textjoin {
+  font-size: 3em;
+}
 .footer {
   border-top: #000 1px solid;
   text-align: center;
@@ -191,6 +205,17 @@ footer {
     font-size: 3em;
     padding: 1em;
   }
+
+  .buytext {
+    font-size: 3em;
+  }
+
+  .button {
+    margin: 1em;
+  }
+  .buttons {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -235,5 +260,9 @@ footer {
   .button {
     margin: 2em;
     font-size: 15px;
+  }
+
+  .textjoin{
+    font-size:1.5em;
   }
 }
